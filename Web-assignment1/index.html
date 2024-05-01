@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description">
+    <meta name="keywords" content="food, delivery, pickup, restaurant">
+    <meta name="author" content="Your Name">
+    <title>Food Wagon</title>
+    <!-- Bootstrap CSS -->
+    <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="./Assets/Css/aos.css" rel="stylesheet">
+    <!-- line-awesome CSS -->
+    <link href="./Assets/Css/line-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./Assets/Css/style.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="./Assets/Css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+            <div class="container ">
+                <a class="navbar-brand " href="#">
+                    <img src="./Assets/images/Top-Nav/Logo.png" alt="Food Wagon Logo" class="img-fluid ">
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <p class="nav-link active" aria-current="page">Deliver to:
+                                <span class=""><i class="las la-map-marker fs-5 text-p-color"></i></span>
+                                <span class="fw-normal">Current Location</span>
+                                <span>Mirpur 1 Bus Stand, Dhaka</span>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <input class=" me-2 col-lg-10 form-control border-light  bg-1" type="search"
+                                placeholder="Search" aria-label="Search">
+                        </li>
+                        <li class="mx-2  ">
+                            <button class=" text-p-color  form-control border-light " type="submit">
+                                <i class="las la-user "></i>Login
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="py-lg-2 overflow-hidden bg-warning" id="home">
+            <div class="container">
+                <div class="row align-items-center g-lg-0">
+
+                    <div class="col-md-5 col-lg-6   order-md-2 mb-lg-1 mb-md-0 text-center">
+                        <a class="icon-link icon-link-hover" href="#" aria-hidden="true">
+
+                            <img src="./Assets/images/hero-header.png" alt="Hero Header Image"
+                                class=" hover-scale la-header w-75 px-lg-5 img-fluid w-auto">
+                        </a>
+                    </div>
+
+                    <div class="col-md-7 col-lg-6 order-md-1 py-3 py-md-0  text-center text-md-start">
+                        <h1 class=" text-light display-4 fw-bolder p-lg-2 ">Are you starving?</h1>
+                        <h1 class="fw-bold mb-lg-3  mb-md-5 fs-3 text-secondary fw-bold p-lg-2">Within a few clicks, find meals
+                            that<br class="">are accessible near you</h1>
+                        <div class="bg-light  p-lg-2 mb-sm-3 rounded-2   ">
+                            <div class="">
+                                <nav>
+                                    <div class="nav nav-tabs  " id="nav-tab" role="tablist">
+                                        <button class=" mb-lg-3 border-light" id="nav-home-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                            aria-controls="nav-home" aria-selected="true">
+                                            <img src="./Assets/images/icon/Tab 1.png" alt="Tab 1 Icon"
+                                                class="img-fluid">
+                                        </button>
+                                        <button class="mx-lg-3 mx-sm-2 mx-md-2 mb-lg-3 mb " id="nav-profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-profile" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false">
+                                            <img src="./Assets/images/icon/Tab 2.png" alt="Tab 2 Icon"
+                                                class="img-fluid">
+                                        </button>
+                                    </div>
+                                    <div class="tab-content mt-lg-2 mt-sm-2 " id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                            aria-labelledby="nav-home-tab">
+                                            <form class="row  align-items-center hover-upward">
+                                                <div class="col-12 row-cols-md-6 col-lg-9 mb-3 mb-md-0">
+                                                    <div class=" input-group">
+                                                        <div><a>
+                                                                <i class="las la-map-marker fs-5 text-p-color"></i>
+                                                            </a></div>
+                                                        <div> <label class="visually-hidden"
+                                                                for="inputDelivery">Address</label>
+                                                            <input class=" border-0 px-2" id="" type="text"
+                                                                src="./Assets/images/location.png"
+                                                                placeholder="Enter Your Address">
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="d-grid gap-1 col-sm-auto">
+                                                    <button class="btn primry-color text-light" type="submit">Find
+                                                        Food</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </nav>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-5">
+            <div class="container">
+                <div class="row h-100 gx-2 mt-7 ">
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                        <div class="card card-span h-100 border-light">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 w-100" src="./Assets/images/discount-item-1.png"
+                                    alt="...">
+                                    <div class="bg-warning px-4 for-radius position-absolute bottom-0   ">
+                                        <div class="d-flex">
+                                            <div class="text-white fs-1 fw-bolder mb-2 mb-sm-0 me-sm-0">15</div>
+                                            <div class="text-white fw-normal fs-5 d-flex flex-column mt-2 align-items-center">
+                                                <span class="">%</span><span class="adjustment-span ">Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="fw-bold fs-6 text-1000 text-truncate">Greys Vage</h5>
+                                <span class="badge p-background  py-2 px-3"><span class="fs-6 text-p-color">6 days
+                                        Remaining</span></span>
+                            </div>
+                            <a class="stretched-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                        <div class="card card-span h-100 border-light">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 w-100" src="./Assets/images/discount-item-2.png"
+                                    alt="...">
+                                    <div class="bg-warning px-4 for-radius position-absolute bottom-0    ">
+                                        <div class="d-flex">
+                                            <div class="text-white fs-1 fw-bolder mb-2 align-items-center">10</div>
+                                            <div class="text-white fw-normal fs-5 d-flex flex-column mt-2 align-items-center">
+                                                <span class="">%</span><span class="adjustment-span">Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="fw-bold fs-6 text-1000 text-truncate">Greys Vage</h5>
+                                <span class="badge p-background py-2 px-3"><span class="fs-6 text-p-color">6 days
+                                        Remaining</span></span>
+                            </div>
+                            <a class="stretched-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-100 pb-4">
+                        <div class="card card-span h-100 border-light">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 w-100" src="./Assets/images/discount-item-3.png"
+                                    alt="...">
+                                    <div class="bg-warning px-4 for-radius position-absolute bottom-0  ">
+                                        <div class="d-flex">
+                                            <div class="text-white fs-1 fw-bolder mb-2 align-items-center">25</div>
+                                            <div class="text-white fw-normal fs-5 d-flex flex-column mt-2 align-items-center">
+                                                <span class="">%</span><span class="adjustment-span">Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="fw-bold fs-6 text-1000 text-truncate">Greys Vage</h5>
+                                <span class="badge p-background py-2 px-3"><span class="fs-6 text-p-color">6 days
+                                        Remaining</span></span>
+                            </div>
+                            <a class="stretched-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-3 mb-md-0 h-80 pb-4 ">
+                        <div class="card card-span h-100 border-light">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-3 w-100" src="./Assets/images/discount-item-4.png"
+                                    alt="...">
+                                    <div class="bg-warning px-4 for-radius position-absolute bottom-0 ">
+                                        <div class="d-flex">
+                                            <div class="text-white fs-1 fw-bolder mb-2 align-items-center">20</div>
+                                            <div class="text-white fw-normal fs-5 d-flex flex-column mt-2 align-items-center ">
+                                                <span class="">%</span><span class="adjustment-span">Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-body px-0 ">
+                                <h5 class="fw-bold fs-6 text-1000 text-truncate">Greys Vage</h5>
+                                <span class="badge p-background py-2 px-3"><span class="fs-6 text-p-color">6 days
+                                        Remaining</span></span>
+                            </div>
+                            <a class="stretched-link" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================-->
+
+        <section class="py-0 bg-primary-gradient">
+            <div class="container">
+                <div class="row justify-content-center g-0">
+                    <div class="col-xl-9">
+                        <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+                            <h5 class="fw-bold text-p-color fs-3 fs-lg-5 lh-sm my-6">How does it work</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 mb-6">
+                                <div class="text-center"><img class="shadow-icon border-white"
+                                        src="./Assets/images/location.png" height="112" alt="...">
+                                    <h5 class="mt-4 fw-bold">Select location</h5>
+                                    <p class="mb-md-0">Choose the location where your food will be delivered.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 mb-6">
+                                <div class="text-center"><img class="shadow-icon border-white"
+                                        src="./Assets/images/order.png" height="112" alt="...">
+                                    <h5 class="mt-4 fw-bold">Choose order</h5>
+                                    <p class="mb-md-0">Check over hundreds of menus to pick your favorite food</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 mb-6">
+                                <div class="text-center"><img class="shadow-icon border-white"
+                                        src="./Assets/images/pay.png" height="112" alt="...">
+                                    <h5 class="mt-4 fw-bold">Pay advanced</h5>
+                                    <p class="mb-md-0">It's quick, safe, and simple. Select several methods of payment
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 mb-6">
+                                <div class="text-center"><img class="shadow-icon border-white"
+                                        src="./Assets/images/meals.png" height="112" alt="...">
+                                    <h5 class="mt-4 fw-bold">Enjoy meals</h5>
+                                    <p class="mb-md-0">Food is made and delivered directly to your home.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+        </section><!-- <section> close ============================-->
+        <!-- ============================================-->
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-lg-5 overflow-hidden">
+            <div class="container">
+                <div class="row h-100">
+                    <div class="col-lg-7 mx-auto text-center mt-7 mb-5">
+                        <h5 class="fw-bolder fs-2  fs-lg-5 lh-sm">Popular items</h5>
+                    </div>
+                    <div class="col-12">
+                        <div class="carousel slide p-2" id="carouselPopularItems" data-bs-touch="false"
+                            data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row gx-3 h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4 "
+                                                    src="./Assets/images/cheese-burger.png" alt="...">
+                                                <div class="ps-0">
+                                                    <h5 class="fw-bold text-1000 mb-1">Cheese Burger</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span class="text-warning">Burger Arena</span>
+                                                    </div><span class="text-1000 fw-bold">$3.88</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/toffes-cake.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Toffe's Cake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Top Sticks</span>
+                                                    </div><span class="text-1000 fw-bold">$4.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/dancake.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Dancake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Cake World</span>
+                                                    </div><span class="text-1000 fw-bold">$1.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4"
+                                                    src="./Assets/images/crispy-sandwitch.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Crispy Sandwitch
+                                                    </h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Fastfood Dine</span>
+                                                    </div><span class="text-1000 fw-bold">$3.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/thai-soup.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Thai Soup</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Foody Man</span>
+                                                    </div><span class="text-1000 fw-bold">$2.79</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <div class="row gx-3 h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4"
+                                                    src="./Assets/images/cheese-burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Cheese Burger</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span class="text-warning">Burger Arena</span>
+                                                    </div><span class="text-1000 fw-bold">$3.88</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/toffes-cake.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Toffe's Cake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Top Sticks</span>
+                                                    </div><span class="text-1000 fw-bold">$4.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/dancake.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Dancake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Cake World</span>
+                                                    </div><span class="text-1000 fw-bold">$1.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4"
+                                                    src="./Assets/images/crispy-sandwitch.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Crispy Sandwitch
+                                                    </h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Fastfood Dine</span>
+                                                    </div><span class="text-1000 fw-bold">$3.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div><img class="img-fluid rounded-4" src="./Assets/images/thai-soup.png"
+                                                    alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Thai Soup</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Foody Man</span>
+                                                    </div><span class="text-1000 fw-bold">$2.79</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="row gx-3 h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/cheese-burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Cheese Burger</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span class="text-warning">Burger Arena</span>
+                                                    </div><span class="text-1000 fw-bold">$3.88</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/toffes-cake.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Toffe's Cake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Top Sticks</span>
+                                                    </div><span class="text-1000 fw-bold">$4.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/dancake.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Dancake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Cake World</span>
+                                                    </div><span class="text-1000 fw-bold">$1.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/crispy-sandwitch.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Crispy Sandwitch
+                                                    </h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Fastfood Dine</span>
+                                                    </div><span class="text-1000 fw-bold">$3.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/thai-soup.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Thai Soup</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Foody Man</span>
+                                                    </div><span class="text-1000 fw-bold">$2.79</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row gx-3 h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/cheese-burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Cheese Burger</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span class="text-warning">Burger Arena</span>
+                                                    </div><span class="text-1000 fw-bold">$3.88</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/toffes-cake.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Toffe's Cake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Top Sticks</span>
+                                                    </div><span class="text-1000 fw-bold">$4.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/dancake.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Dancake</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Cake World</span>
+                                                    </div><span class="text-1000 fw-bold">$1.99</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/crispy-sandwitch.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Crispy Sandwitch
+                                                    </h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Fastfood Dine</span>
+                                                    </div><span class="text-1000 fw-bold">$3.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="rounded-4"><img class="img-fluid rounded-3 h-100"
+                                                    src="./Assets/images/thai-soup.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="fw-bold text-1000 text-truncate mb-1">Thai Soup</h5>
+                                                    <div>
+                                                        <div>
+                                                            <a>
+                                                                <img class="logo-size"
+                                                                    src="./Assets/images/location.png" alt="">
+                                                            </a>
+
+                                                        </div><span class="text-warning">Foody Man</span>
+                                                    </div><span class="text-1000 fw-bold">$2.79</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid gap-2"><a class="btn btn-lg primry-color text-light"
+                                                    href="#!" role="button">Order now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-controls ">
+
+                                <button
+                                    class="carousel-control-prev carousel-control-prev-icon bg-warning hover-upward rounded-circle button-test "
+                                    type="button" data-bs-target="#carouselPopularItems" data-bs-slide="prev"><span
+                                        class="visually-hidden">Previous</span></button>
+
+                                <button
+                                    class="carousel-control-next carousel-control-next-icon bg-warning hover-upward rounded-circle button-test"
+                                    type="button" data-bs-target="#carouselPopularItems" data-bs-slide="next"><span
+                                        class="visually-hidden">Next </span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- end of .container-->
+        </section><!-- <section> close ============================-->
+        <!-- ============================================-->
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+
+        <section id="testimonial">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto text-center mb-4">
+                        <h5 class="fw-bolder fs-2 fs-lg-5 lh-sm mb-3">Featured Restaurants</h5>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/food-world.png" alt="...">
+                            <div class="card-img-overlay ps-0  "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xxl-3  icon-move "
+                                        src="./Assets/images/food-world-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">20% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column ">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class=" m-sm-0  fw-bold text-dark ">Food world</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>46</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge p-background p-2 "><span
+                                    class="fw-bold fs-5 text-p-color ">Opens Tomorrow</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/pizza-hub.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xl-3 icon-move"
+                                        src="./Assets/images/pizzahub-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">10% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0  fw-bold text-dark ">Pizza hub</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>40</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge p-background p-2 "><span
+                                    class="fw-bold fs-5 text-p-color ">Opens Tomorrow</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/donuts-hut.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xxl-3 icon-move"
+                                        src="./Assets/images/donuts-hut-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">15% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Donuts-hut</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>20</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success ">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/donuthut.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xl-3 icon-move"
+                                        src="./Assets/images/donut-hut-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">15% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Donuts hut</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>50</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5">
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/ruby-tuesday.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xl-3 icon-move"
+                                        src="./Assets/images/ruby-tuesday-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">10% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Ruby tuesday</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>46</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success ">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/kuakata.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xl-3 icon-move" src="./Assets/images/kuakata-logo.png"
+                                        alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">10% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Kuakata Fried Chicken</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>40</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success ">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/red-square.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xxl-3 icon-move"
+                                        src="./Assets/images/red-square-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">15% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Donuts-hut</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>20</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success ">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col mb-4">
+                        <div class="card h-100 text-white custom-card-bg rounded-3 border-light position-relative">
+                            <img class="card-img-top rounded-3" src="./Assets/images/taco-bell.png" alt="...">
+                            <div class="card-img-overlay ps-0 mt-auto "><span class="badge primry-color p-2 ms-3">
+                                    <img class="position-absolute icon-move-down mt-xxl-3 icon-move"
+                                        src="./Assets/images/taco-bell-logo.png" alt="">
+                                    <span></span>
+
+
+                                    <span class="fs-6">15% off</span><span
+                                        class="fs-0 bg-warning rounded-3 ms-2  p-2 move-left">
+                                        <i class="las la-tachometer-alt fs-6 "></i>Fast</span>
+                                </span>
+                            </div>
+                            <div class="card-body ps-0 ">
+                                <div class="d-flex flex-column">
+                                    <span class="need-extra-padding-left">
+                                        <h5 class="m-sm-0 fw-bold text-dark ">Donuts hut</h5>
+                                        <span class="mb-0 text-warning"><i class="las la-star"></i>50</span>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 p-2 "><span
+                                    class="fw-bold fs-5 text-success">Opens Now</span></span>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+        <!-- <section> begin ============================-->
+
+        <section class="py-lg-5 overflow-hidden mt-lg-5 py-5">
+            <div class="container">
+                <div class="row flex-center mb-4">
+                    <div class="col-lg-7">
+                        <h5 class="fw-bolder fs-2 fs-lg-5 lh-sm text-center text-lg-start">Search by Food</h5>
+                    </div>
+                    <div class="col-lg-4 text-lg-end text-center"><a href="#" class="btn fw-bold">VIEW ALL</a>
+                        <a class="btn me-2" href="#!" id="#carouselSearchByFood" role="img">
+                            <svg type="" data-bs-target="#carouselSearchByFood" data-bs-slide="prev"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-arrow-left-circle primry-color rounded-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                            </svg>
+                        </a>
+                        <a class="btn " href="#!" id="#carouselSearchByFood" role="img">
+                            <svg data-bs-target="#carouselSearchByFood" data-bs-slide="next"
+                                xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-arrow-right-circle primry-color rounded-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="row flex-center">
+                    <div class="col-12">
+                        <div class="carousel slide" id="carouselSearchByFood" data-bs-touch="false"
+                            data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class=" card h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images//search-pizza.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">pizza
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card h-100 rounded-circle border-0"><img
+                                                        class=" img-fluid rounded-circle h-100"
+                                                src="./Assets/images/burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Burger
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/noodles.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Noodles
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/sub-sandwich.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Sub-sandwiches</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/chowmein.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Chowmein</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/steak.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Steak
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/search-pizza.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">pizza
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Burger
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/noodles.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Noodles
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/sub-sandwich.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Sub-sandwiches</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/chowmein.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Chowmein</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/steak.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Steak
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/search-pizza.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">pizza
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Burger
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/noodles.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Noodles
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/sub-sandwich.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Sub-sandwiches</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/chowmein.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Chowmein</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/steak.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Steak
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row h-100 align-items-center">
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/search-pizza.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">pizza
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/burger.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Burger
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/noodles.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Noodles
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/sub-sandwich.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Sub-sandwiches</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/chowmein.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">
+                                                        Chowmein</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                                            <div class="card card-span h-100 rounded-circle border-0"><img
+                                                    class="img-fluid rounded-circle h-100"
+                                                    src="./Assets/images/steak.png" alt="...">
+                                                <div class="card-body ps-0">
+                                                    <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Steak
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+
+
+        <section>
+            <div class="bg-holder pt-lg-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-10">
+                            <div class="card card-span shadow-warning rounded-3">
+                                <div class="card-body py-5">
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3">
+                                            <div
+                                                class="d-flex flex-md-column flex-xl-row justify-content-evenly justify-content-lg-between align-items-center">
+                                                <img src="./Assets/images/icon/discounts.png" width="100"
+                                                    alt="Discounts">
+                                                <h2 class="fw-bolder text-1000 mb-0 text-gradient">Daily Discounts</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 hr-vertical">
+                                            <div
+                                                class="d-flex flex-md-column flex-xl-row justify-content-evenly justify-content-lg-between align-items-center">
+                                                <img src="./Assets/images/icon/live-tracking.png" width="100"
+                                                    alt="Live Tracking">
+                                                <h2 class="fw-bolder text-1000 mb-0 text-gradient">Live Tracking</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 hr-vertical">
+                                            <div
+                                                class="d-flex flex-md-column flex-xl-row justify-content-evenly justify-content-lg-between align-items-center">
+                                                <img src="./Assets/images/icon/quick-delivery.png" width="100"
+                                                    alt="Quick Delivery">
+                                                <h2 class="fw-bolder text-1000 mb-0 text-gradient">Quick Delivery</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-center mt-md-8">
+                        <div class="col-lg-5 d-none d-lg-block mb-0">
+                            <img class="w-100" src="./Assets/images/phone-cta-one.png" alt="App Image">
+                        </div>
+                        <div class="col-lg-5">
+                            <h1 class="text-p-color">Install the app</h1>
+                            <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in
+                                a world of delectable food.</p>
+                            <a class="pe-2" href="https://www.apple.com/app-store/" target="_blank">
+                                <img src="./Assets/images/app-store.svg" width="160" alt="Download from App Store">
+                            </a>
+                            <a href="https://play.google.com/store/apps" target="_blank">
+                                <img src="./Assets/images/google-play.svg" width="160" alt="Download from Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+
+        <section class="pb-lg-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-3 shadow-lg">
+                            <div class="row g-0">
+                                <div class="col-md-5 col-xl-7 col-xxl-8 order-md-1">
+                                    <img src="./Assets/images/crispy-sandwiches.png"
+                                        class="img-fluid w-100 h-100  object-fit-lg-cover rounded-top rounded-md-end rounded-md-top-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                                    <h1 class="card-title mt-xl-5 mb-lg-2 fw-bold">Best deals<span
+                                            class="text-warning">Crispy Sandwiches</span></h1>
+                                    <p class="fs-6">Enjoy the large size of sandwiches. Complete your meal with the
+                                        perfect slice of sandwiches.</p>
+                                    <div class="d-grid">
+                                        <a href="#!"
+                                            class="btn btn-lg bg-warning text-light mt-xxl-0 fs-6 fw-bold m-lg-4">PROCEED
+                                            TO ORDER <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right ms-2"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L11.293 8 5.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+        </section>
+
+
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-lg-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-3 shadow-lg">
+                            <div class="row g-0">
+                                <div class="col-md-5 col-xl-7 col-xxl-8">
+                                    <img src="./Assets/images/fried-chicken.png"
+                                        class="img-fluid w-100 h-100  object-fit-lg-cover rounded-top rounded-md-end rounded-md-top-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5 order-md-1">
+                                    <h1 class="card-title mt-xl-5 mb-lg-2 fw-bold">Celebrate parties with <span
+                                            class="text-warning">Fried Chicken</span></h1>
+                                    <p class="fs-6">Get the best fried chicken smeared with a lip smacking lemon
+                                        chili flavor. Check out best deals for fried chicken.</p>
+                                    <div class="d-grid">
+                                        <a href="#!"
+                                            class="btn btn-lg bg-warning text-light mt-xxl-0 fs-6 fw-bold m-lg-4">PROCEED
+                                            TO ORDER <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right ms-2"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L11.293 8 5.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+        </section>
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section class="py-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-3 shadow-lg">
+                            <div class="row g-0">
+                                <div class="col-md-5 col-xl-7 col-xxl-8 order-0 order-md-1">
+                                    <img src="./Assets/images/pizza.png"
+                                        class="img-fluid w-100 h-100  object-fit-lg-cover rounded-top rounded-md-end rounded-md-top-0"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5 ">
+                                    <h1 class="card-title mt-xl-5 mb-lg-2 fw-bold">Wanna eat hot &amp; <span
+                                            class="text-warning">spicy Pizza?</span></h1>
+                                    <p class="fs-6">Pair up with a friend and enjoy the hot and crispy pizza pops.
+                                        Try it with the best deals.</p>
+                                    <div class="d-grid">
+                                        <a href="#!"
+                                            class="btn btn-lg bg-warning text-light mt-xxl-0 fs-6 fw-bold m-lg-4">PROCEED
+                                            TO ORDER <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right ms-2"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L11.293 8 5.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of .container-->
+        </section>
+
+
+        <section class="py-0">
+            <div class="bg-hold-2 w-100 h-100">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xxl-9 py-7 text-center">
+                            <h1 class="fw-bold mb-4 text-white fs-3">Are you ready to order <br>with the best deals?
+                            </h1>
+                            <a class="btn  primry-color text-light m-4 fw-bold" href="#">PROCEED TO ORDER
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16 " fill="currentColor"
+                                    class="bi bi-chevron-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M5.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L11.293 8 5.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-0 pt-7 bg-dark">
+            <div class="container">
+                <div class="row justify-content-lg-between">
+                    <h5 class="lh-lg fw-bold text-light">OUR TOP CITIES</h5>
+                    <div class="col-6 col-md-4 col-lg-auto mb-3">
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">San Francisco</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Miami</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">San Diego</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">East Bay</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Long Beach</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-auto mb-3">
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Los Angeles</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Washington DC</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Seattle</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Portland</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Nashville</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-auto mb-3">
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">New York City</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Orange County</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Atlanta</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Charlotte</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Denver</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-auto mb-3">
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Chicago</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Phoenix</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Las Vegas</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Sacramento</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Oklahoma City</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-auto mb-3">
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Columbus</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">New Mexico</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Albuquerque</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Sacramento</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">New Orleans</a></li>
+                        </ul>
+                    </div>
+                    <!-- Repeat the same structure for other city columns -->
+                </div>
+                <hr class="border border-light">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                        <h5 class="lh-lg fw-bold text-light">COMPANY</h5>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">About Us</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Team</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Careers</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">blog</a></li>
+                            <!-- Other company links -->
+                        </ul>
+                    </div>
+                    <!-- Repeat the same structure for other company columns -->
+                    <div class="col-6 col-md-4 col-lg-3 col-xxl-2 col-lg-3 mb-3">
+                        <h5 class="lh-lg fw-bold text-white">CONTACT</h5>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Help &amp;
+                                    Support</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Partner with us </a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Ride with us</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Ride with us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                        <h5 class="lh-lg fw-bold text-white">LEGAL</h5>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Terms &amp;
+                                    Conditions</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Refund &amp;
+                                    Cancellation</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Privacy Policy</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+                        <h5 class="lh-lg fw-bold text-white">LEGAL</h5>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Terms &amp;
+                                    Conditions</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Refund &amp;
+                                    Cancellation</a></li>
+                            <li class="lh-lg"><a class="text-light text-decoration-none" href="#!">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr class="border border-light">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6 col-xxl-4">
+                        <h5 class="lh-lg fw-bold text-light">FOLLOW US</h5>
+                        <div class="social-links">
+                            <a href="#!" class=" me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-twitter-x text-light" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                </svg></a>
+                            <a href="#!" class="text-light me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-facebook text-light"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg></a>
+                            <a href="#!" class="text-light me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-instagram text-light"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg></a>
+                        </div>
+                        <h3 class="text-light my-4">Receive exclusive offers and discounts in your mailbox</h3>
+                        <div class="row input-group mb-5">
+                            <div class="col-auto position-relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-envelope  position-absolute top-50  mx-2 translate-middle-y text-dark "
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg>
+                                <input class="form-control input-box  border-0 ps-5" type="email"
+                                    placeholder="Enter Email" aria-label="email">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-warning" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border border-light ">
+            <div class="row gx-0 pb-lg-3">
+                <div class="col-md-6 ">
+                    <p class="text-light">All rights Reserved © Your Company, 2024</p>
+                </div>
+                <div class="col-md-6  text-md-end">
+                    <p class="text-light  ">Made with &nbsp;
+                        <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                            fill="#FFB30E" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z">
+                            </path>
+                        </svg>&nbsp; by <a class="text-light fw-bold text text-decoration-none"
+                            href="https://themewagon.com/" target="_blank">MF-Rajput</a>
+                    </p>
+                </div>
+            </div>
+            </div><!-- end of .container-->
+        </section><!-- <section> close -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Library -->
+    <script src="./Assets/Js/aos.js"></script>
+    <!-- Your Custom Scripts -->
+    <script src="./Assets/Js/main.js"></script>
+</body>
+
+</html>

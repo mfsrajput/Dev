@@ -1,0 +1,142 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primry-color: #f17228;
+    --primry-backgroud-opacity: #f172282d;
+    
+    --bs-font-sans-serif: "Source Sans Pro", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --bs-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255,254,254,0.15), rgba(255,254,254,0))
+
+}
+.primry-color
+{
+    background-color: var(--primry-color);
+    border-color: #f17228;
+    }
+
+    .text-p-color
+    {
+        color: var(--primry-color);
+
+    }
+
+    .p-background
+    {
+        background-color: var(--primry-backgroud-opacity);
+        
+    }
+
+   .font-ctrl
+   {
+        font-weight: 900;
+        font-size: 3rem;
+        color: #fff;
+        
+    
+    }
+    .move-left {
+        position: absolute;
+        left: 90px;
+        top: 16.5px;
+        
+    }
+    .icon-move-down
+    {
+        top: 250px;
+        left: 0;
+        
+    }
+    .need-extra-padding-left
+    {
+        position: absolute;
+        top: 278px;
+
+        left: 75px;
+    }
+
+
+
+
+.hover-scale {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transform: translateY(80px);
+
+}
+
+.hover-scale:hover {
+    transform: translateY(-10px); /* Move the image upward by 10 pixels on hover */
+}
+
+.hover-upward {
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.hover-upward:hover {
+    transform: translateY(-5px); /* Move the form upward by 5 pixels on hover */
+}
+
+
+.logo-size
+{
+    width: 1rem;
+ 
+}
+.icon-color
+{
+    color: var(--bs-danger);
+    
+}
+
+.adjustment-span
+{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.card-discount
+{
+    position: absolute;
+    top: 67%;
+    
+}
+.for-radius{
+    border-radius: 0 20px 0 10px
+}
+.button-test
+{
+    position: absolute;
+    top: 40%;
+    margin: -45px;
+    width: 3rem;
+    height: 3rem;
+}
+.bg-holder
+{
+    background-image: url(../images/cta-one-bg.png);
+    background-position: center;
+    background-size: cover;
+
+
+}
+.bg-hold-2
+{
+    background-image: url(../images/cta-two-bg.png);
+    width: 100%;
+    height: 100%;
+}
+
+

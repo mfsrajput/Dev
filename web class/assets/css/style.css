@@ -1,0 +1,266 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dbe5de;
+}
+:root
+{
+    --color1: #001219;
+    --color2: #005f73;
+    --color3: #3d9397;
+    --color4: #94d28d;
+    --color5: #e9d8a6;
+    --color6: #ee9800;
+    --color7: #ca6702;
+    --color8: #bb3e03;
+    --color9: #ae2012;
+    --color10: #9b2226;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+
+
+
+
+#collections
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+   
+}
+#mission
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+   
+}
+#Featured
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+
+#popular
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+figure
+{
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    border: 10px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+figure img
+{
+    width: 100%;
+    object-fit:cover;
+    object-position: 0 -50px;
+}
+figcaption {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.675rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+figcaption a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.color2,
+.color2 a:hover {
+    border-color: var(--color2);
+    color: var(--color2);
+}
+
+.color3,
+.color3 a:hover {
+    border-color: var(--color3);
+    color: var(--color3);
+}
+
+.color4,
+.color4 a:hover {
+    border-color: var(--color4);
+    color: var(--color4);
+}
+
+.color6,
+.color6 a:hover {
+    border-color: var(--color6);
+    color: var(--color6);
+}
+
+.color7,
+.color7 a:hover {
+    border-color: var(--color7);
+    color: var(--color7);
+}
+
+.color8,
+.color8 a:hover {
+    border-color: var(--color8);
+    color: var(--color8);
+}
+
+/* ====================section-popular===================== */
+
+.stripe {
+    background-color: var(--color2);
+    padding: 1rem 0 4rem 0;
+}
+
+#popular h2 {
+    color: white;
+}
+
+/* ==================header-style===================== */
+
+.header {
+    background-color: var(--color5);
+}
+
+header {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+
+}
+
+nav li:first-child a {
+    background-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--color10);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+#hero {
+    background-color: var(--color7);
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#hero img {
+    max-width: 100%;
+    max-height: 454px;
+}
+#mission{
+    margin-bottom: 3rem;
+}
+.missiontext{
+    display: block;
+    line-height: 1.7;
+}
+.missionimg{
+    display: block;
+    max-height: 100px;
+}
+footer {
+    background-color: var(--color5);
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h4 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer li {
+    margin-right: 1rem;
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 2rem;
+    font-weight: bold;
+}
