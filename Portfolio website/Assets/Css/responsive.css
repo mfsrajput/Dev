@@ -1,0 +1,16 @@
+@media (min-width:992px)
+{
+    .navbar
+    {
+        min-height: 100vh;
+        width: var(--slidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.8), rgba(3,63,71,0.8));
+        background-size: cover;
+        background-position: center;
+    }
+    /* Content Wrapper  */
+    #content-wrapper
+    {
+        padding-left: var(--slidbar-width);
+    }
+}
