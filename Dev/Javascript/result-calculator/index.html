@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Result Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="heading">Simple Result Calculator</h1>
+    
+
+<div class="result-container">
+    <form id="resultForm">
+        <label for="personName">Full Name:</label>
+        <input class="input-field" type="text" id="personName" name="Name" placeholder="Enter Your Name" required>
+        <br>
+
+        <label for="rollNumber">Roll Number:</label>
+        <input class="input-field" type="text" id="rollNumber" name="RollNumber" placeholder="Enter Your Roll Number" required>
+        <br>
+
+        <label for="personMarks">Enter Marks:</label>
+        <input class="input-field" type="number" id="personMarks" name="Marks" placeholder="Enter Your Marks" required>
+
+        <button class="calculate-button" type="button" onclick="calculateResult()">Calculate Result</button>
+    </form>
+
+    <p id="resultDisplay"></p>
+</div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
